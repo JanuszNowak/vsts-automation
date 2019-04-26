@@ -28,7 +28,7 @@ $result|Out-GridView
 Foreach ($i in $result.value)
 {
  
-    if($i.name -eq "OneCustomer-ASP.NET Core (.NET Framework)-CI"){
+    if($i.name -eq "BuildName"){
     # Construct the REST URL to obtain specific build definiction details
      $uri = "https://$($vstsAccount).visualstudio.com/DefaultCollection/$($projectName)/_apis/build/definitions/$($i.id)?api-version=2.0"
        
